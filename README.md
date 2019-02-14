@@ -1,6 +1,6 @@
 # MTProfileImageView
 
-[![CI Status](https://img.shields.io/travis/Mehul Thakkar/MTProfileImageView.svg?style=flat)](https://travis-ci.org/Mehul Thakkar/MTProfileImageView)
+[![CI Status](https://img.shields.io/travis/Mehul18292/MTProfileImageView.svg?style=flat)](https://travis-ci.org/Mehul18292/MTProfileImageView)
 [![Version](https://img.shields.io/cocoapods/v/MTProfileImageView.svg?style=flat)](https://cocoapods.org/pods/MTProfileImageView)
 [![License](https://img.shields.io/cocoapods/l/MTProfileImageView.svg?style=flat)](https://cocoapods.org/pods/MTProfileImageView)
 [![Platform](https://img.shields.io/cocoapods/p/MTProfileImageView.svg?style=flat)](https://cocoapods.org/pods/MTProfileImageView)
