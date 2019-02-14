@@ -1,5 +1,5 @@
 PODS:
-  - MTProfileImageView (0.1.0):
+  - MTProfileImageView (0.1.1):
     - SDWebImage
   - SDWebImage (4.4.5):
     - SDWebImage/Core (= 4.4.5)
@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MTProfileImageView: f2d7f75ff00e5fa583abfcdada373e1250be6285
+  MTProfileImageView: 93dbb7b704450ba30ae54291d006051046338805
   SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
 
 PODFILE CHECKSUM: 87ff6e23d32c1e31439565c0133f528013844ba9

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTProfileImageView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'UIImageView subclass which either shows image from imageURLm OR creates 2 character name based image for profile'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ TODO: UIImageView subclass which either shows image from imageURLm OR creates 2 
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MTProfileImageView/Classes/*'
+  s.source_files = 'MTProfileImageView/*'
   s.swift_version = '4.2'
   
   # s.resource_bundles = {
