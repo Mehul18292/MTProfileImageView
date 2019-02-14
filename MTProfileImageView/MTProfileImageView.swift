@@ -63,6 +63,8 @@ public class MTProfileImageView: UIImageView {
     }
     
     func updateUI() {
+        
+        self.image = nil;
         if shortNameLabel == nil{
             shortNameLabel = UILabel(frame: self.bounds);
         }

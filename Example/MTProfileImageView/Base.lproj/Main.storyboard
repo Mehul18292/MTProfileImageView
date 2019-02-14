@@ -28,8 +28,6 @@
                                     <constraint firstAttribute="width" secondItem="5JD-jL-Ids" secondAttribute="height" id="yro-uC-U2e"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="firstName" value="Mehul"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="lastName" value="Thakkar"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="keepSameColorAlwaysForSameName" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -41,6 +39,9 @@
                             <constraint firstItem="5JD-jL-Ids" firstAttribute="centerX" secondItem="eRX-X7-74Y" secondAttribute="centerX" id="p0W-Lv-lBN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="5JD-jL-Ids" id="ekL-cf-v0h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qlh-wA-HO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
