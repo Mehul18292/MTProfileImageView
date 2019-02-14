@@ -12,17 +12,47 @@ import SDWebImage
 
 public class MTProfileImageView: UIImageView {
     
-    @IBInspectable public var fullName:String?
-    @IBInspectable public var firstName:String?
-    @IBInspectable public var lastName:String?
+    @IBInspectable public var fullName:String?{
+        didSet{
+            self.updateUI();
+        }
+    }
     
-    @IBInspectable public var keepSameColorAlwaysForSameName:Bool = true;
+    @IBInspectable public var firstName:String?{
+        didSet{
+            self.updateUI();
+        }
+    }
     
-    @IBInspectable public var profileImageURLStr:String?
+    @IBInspectable public var lastName:String?{
+        didSet{
+            self.updateUI();
+        }
+    }
     
-    @IBInspectable public var colorCodesArray:[String]?
+    @IBInspectable public var keepSameColorAlwaysForSameName:Bool = true{
+        didSet{
+            self.updateUI();
+        }
+    }
     
-    @IBInspectable public var isRounded:Bool = true;
+    @IBInspectable public var profileImageURLStr:String?{
+        didSet{
+            self.updateUI();
+        }
+    }
+    
+    @IBInspectable public var colorCodesArray:[String]?{
+        didSet{
+            self.updateUI();
+        }
+    }
+    
+    @IBInspectable public var isRounded:Bool = true{
+        didSet{
+            self.updateUI();
+        }
+    }
     
     public var shortNameLabel:UILabel?
     let colorGenerator = MTColorGenerator();
