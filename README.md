@@ -22,7 +22,7 @@ pod 'MTProfileImageView'
 
 ## Author
 
-Mehul Thakkar, mehul.thakkar@rapidops.com
+Mehul Thakkar, mehul18292@gmail.com
 
 ## License
 

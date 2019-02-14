@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MTProfileImageView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MTProfileImageView.'
+  s.summary          = 'UIImageView subclass which either shows image from imageURLm OR creates 2 character name based image for profile'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: UIImageView subclass which either shows image from imageURLm OR creates 2 character name based image for profile.
                        DESC
-
-  s.homepage         = 'https://github.com/Mehul Thakkar/MTProfileImageView'
+                       
+  s.homepage         = 'https://github.com/Mehul18292/MTProfileImageView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Mehul Thakkar' => 'mehul.thakkar@rapidops.com' }
-  s.source           = { :git => 'https://github.com/Mehul Thakkar/MTProfileImageView.git', :tag => s.version.to_s }
+  s.author           = { 'Mehul Thakkar' => 'mehul18292@gmail.com' }
+  s.source           = { :git => 'https://github.com/Mehul18292/MTProfileImageView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -38,5 +38,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'SDWebImage'
 end

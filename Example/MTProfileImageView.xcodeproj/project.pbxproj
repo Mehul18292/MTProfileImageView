@@ -30,9 +30,9 @@
 /* Begin PBXFileReference section */
 		0D6EAE0F5CFEBE8E3D22BADC /* Pods-MTProfileImageView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTProfileImageView_Example.release.xcconfig"; path = "Target Support Files/Pods-MTProfileImageView_Example/Pods-MTProfileImageView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1110DB13397D5FCE94B6AE32 /* Pods_MTProfileImageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTProfileImageView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		141CD8FF56C99E7F8249C7F6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		141CD8FF56C99E7F8249C7F6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2D75398984917E7A2D6BE25A /* Pods-MTProfileImageView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTProfileImageView_Example.debug.xcconfig"; path = "Target Support Files/Pods-MTProfileImageView_Example/Pods-MTProfileImageView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2F19B78868BC5080FBDF8D47 /* MTProfileImageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MTProfileImageView.podspec; path = ../MTProfileImageView.podspec; sourceTree = "<group>"; };
+		2F19B78868BC5080FBDF8D47 /* MTProfileImageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MTProfileImageView.podspec; path = ../MTProfileImageView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4CB92EBFE09EFA0588B9094E /* Pods-MTProfileImageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTProfileImageView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MTProfileImageView_Tests/Pods-MTProfileImageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MTProfileImageView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTProfileImageView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		607FACE51AFB9204008FA782 /* MTProfileImageView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTProfileImageView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6D713D92D0FDF9FF40AFCBB4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6D713D92D0FDF9FF40AFCBB4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		81BB9E866EF5E0D6A55332DC /* Pods-MTProfileImageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTProfileImageView_Tests.release.xcconfig"; path = "Target Support Files/Pods-MTProfileImageView_Tests/Pods-MTProfileImageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9A4748582F64799793E2FE4E /* Pods_MTProfileImageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTProfileImageView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,7 +147,6 @@
 				4CB92EBFE09EFA0588B9094E /* Pods-MTProfileImageView_Tests.debug.xcconfig */,
 				81BB9E866EF5E0D6A55332DC /* Pods-MTProfileImageView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,12 +293,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MTProfileImageView_Example/Pods-MTProfileImageView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MTProfileImageView/MTProfileImageView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MTProfileImageView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

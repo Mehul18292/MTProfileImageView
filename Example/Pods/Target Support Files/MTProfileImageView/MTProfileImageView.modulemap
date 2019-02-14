@@ -1,0 +1,6 @@
+framework module MTProfileImageView {
+  umbrella header "MTProfileImageView-umbrella.h"
+
+  export *
+  module * { export * }
+}
