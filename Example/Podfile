@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MTProfileImageView_Example' do
+  pod 'MTProfileImageView', :path => '../'
+
+  target 'MTProfileImageView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
