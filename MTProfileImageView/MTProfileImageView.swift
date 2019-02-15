@@ -69,7 +69,7 @@ public class MTProfileImageView: UIImageView {
             shortNameLabel = UILabel(frame: self.bounds);
         }
         
-        let fontSize = self.bounds.size.height/4.0;
+        let fontSize = self.bounds.size.height/3.0;
         
         shortNameLabel?.textAlignment = .center;
         shortNameLabel?.font = UIFont.boldSystemFont(ofSize: fontSize);
