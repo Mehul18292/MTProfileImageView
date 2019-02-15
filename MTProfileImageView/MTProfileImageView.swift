@@ -91,7 +91,11 @@ public class MTProfileImageView: UIImageView {
         let fontSize = self.bounds.size.height/3.0;
         
         shortNameLabel?.textAlignment = .center;
-        shortNameLabel?.font = UIFont.boldSystemFont(ofSize: fontSize);
+        if #available(iOS 8.2, *) {
+            shortNameLabel?.font = UIFont.systemFont(ofSize: fontSize, weight: UIFont.Weight.medium)
+        } else {
+            shortNameLabel?.font = UIFont.boldSystemFont(ofSize: fontSize);
+        };
         shortNameLabel?.isHidden = false;
         shortNameLabel?.textColor = UIColor.white;
         
