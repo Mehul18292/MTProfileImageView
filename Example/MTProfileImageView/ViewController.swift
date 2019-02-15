@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         profileImageView.firstName = "Aklesh"
         profileImageView.lastName = "Rathaur"
-        profileImageView.profileImageURLStr = "https://www.fnordware.com/superpng/pnggrad16rgb.png"
+        profileImageView.profileImageURLStr = nil;
         profileImageView.fullName = "Aklesh Rathaur";
     }
 

@@ -14,43 +14,53 @@ public class MTProfileImageView: UIImageView {
     
     @IBInspectable public var fullName:String?{
         didSet{
-            self.updateUI();
+            if self.image == nil{
+                self.updateUI(withImageUpdate: true);
+            }
         }
     }
     
     @IBInspectable public var firstName:String?{
         didSet{
-            self.updateUI();
+            if self.image == nil{
+                self.updateUI(withImageUpdate: true);
+            }
         }
     }
     
     @IBInspectable public var lastName:String?{
         didSet{
-            self.updateUI();
+            if self.image == nil{
+                self.updateUI(withImageUpdate: true);
+            }
         }
     }
     
     @IBInspectable public var keepSameColorAlwaysForSameName:Bool = true{
         didSet{
-            self.updateUI();
+            if self.image == nil{
+                self.updateUI(withImageUpdate: true);
+            }
         }
     }
     
     @IBInspectable public var profileImageURLStr:String?{
         didSet{
-            self.updateUI();
+            self.updateUI(withImageUpdate: true);
         }
     }
     
     @IBInspectable public var colorCodesArray:[String]?{
         didSet{
-            self.updateUI();
+            if self.image == nil{
+                self.updateUI(withImageUpdate: true);
+            }
         }
     }
     
     @IBInspectable public var isRounded:Bool = true{
         didSet{
-            self.updateUI();
+            self.updateUI(withImageUpdate: true);
         }
     }
     
@@ -62,17 +72,17 @@ public class MTProfileImageView: UIImageView {
             if image != nil{
                 self.shortNameLabel?.isHidden = true;
             }else{
-                self.updateUI()
+                self.updateUI(withImageUpdate: false);
             }
         }
     }
     
     override public func awakeFromNib() {
         super.awakeFromNib();
-        self.updateUI();
+        self.updateUI(withImageUpdate: true);
     }
     
-    func updateUI() {
+    func updateUI(withImageUpdate:Bool) {
         
         if shortNameLabel == nil{
             shortNameLabel = UILabel(frame: self.bounds);
@@ -108,13 +118,15 @@ public class MTProfileImageView: UIImageView {
         }
         
         
-        if profileImageURLStr != nil, !profileImageURLStr!.isEmpty, let profileImageURL = URL(string: profileImageURLStr!){
-            self.sd_setImage(with: profileImageURL) { (image, _, _, _) in
-                if image != nil{
-                    self.image = image;
-                    self.shortNameLabel?.isHidden = true;
-                }else{
-                    self.shortNameLabel?.isHidden = false;
+        if withImageUpdate{
+            if profileImageURLStr != nil, !profileImageURLStr!.isEmpty, let profileImageURL = URL(string: profileImageURLStr!){
+                self.sd_setImage(with: profileImageURL) { (image, _, _, _) in
+                    if image != nil{
+                        self.image = image;
+                        self.shortNameLabel?.isHidden = true;
+                    }else{
+                        self.shortNameLabel?.isHidden = false;
+                    }
                 }
             }
         }
