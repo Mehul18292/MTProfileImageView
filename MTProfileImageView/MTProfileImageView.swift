@@ -57,6 +57,16 @@ public class MTProfileImageView: UIImageView {
     public var shortNameLabel:UILabel?
     let colorGenerator = MTColorGenerator();
     
+    public override var image: UIImage?{
+        didSet{
+            if image != nil{
+                self.shortNameLabel?.isHidden = true;
+            }else{
+                self.updateUI()
+            }
+        }
+    }
+    
     override public func awakeFromNib() {
         super.awakeFromNib();
         self.updateUI();
