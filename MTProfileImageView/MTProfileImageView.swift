@@ -114,7 +114,6 @@ public class MTProfileImageView: UIImageView {
                     self.image = image;
                     self.shortNameLabel?.isHidden = true;
                 }else{
-                    self.image = nil;
                     self.shortNameLabel?.isHidden = false;
                 }
             }
