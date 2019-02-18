@@ -46,6 +46,7 @@ public class MTProfileImageView: UIImageView {
     
     @IBInspectable public var profileImageURLStr:String?{
         didSet{
+            self.image = nil;
             self.updateUI(withImageUpdate: true);
         }
     }
