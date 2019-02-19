@@ -16,10 +16,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        profileImageView.firstName = "Aklesh"
-        profileImageView.lastName = "Rathaur"
-        profileImageView.profileImageURLStr = nil;
-        profileImageView.fullName = "Aklesh Rathaur";
+//        profileImageView.firstName = "Aklesh"
+//        profileImageView.lastName = "Rathaur"
+//        profileImageView.profileImageURLStr = nil;
+//        profileImageView.fullName = "Aklesh Rathaur";
+        profileImageView.image = UIImage(named: "ic_timeline_activity_type1");
     }
 
     override func didReceiveMemoryWarning() {

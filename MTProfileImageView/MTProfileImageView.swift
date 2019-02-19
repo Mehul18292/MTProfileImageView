@@ -72,6 +72,7 @@ public class MTProfileImageView: UIImageView {
         didSet{
             if image != nil{
                 self.shortNameLabel?.isHidden = true;
+                self.backgroundColor = UIColor.clear;
             }else{
                 self.updateUI(withImageUpdate: false);
             }
