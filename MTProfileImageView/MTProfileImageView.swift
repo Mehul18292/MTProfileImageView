@@ -84,6 +84,24 @@ public class MTProfileImageView: UIImageView {
         self.updateUI(withImageUpdate: true);
     }
     
+    override public func layoutSubviews() {
+        super.layoutSubviews();
+        if isRounded{
+            if #available(iOS 11.0, *) {
+                self.layer.cornerRadius = self.frame.height/2.0;
+            } else {
+                let anim = CABasicAnimation(keyPath: "cornerRadius")
+                anim.fromValue = self.layer.cornerRadius
+                let radius = self.frame.size.width / 2
+                anim.toValue = radius
+                anim.duration = animationDuration
+                self.layer.cornerRadius = radius
+                self.layer.add(anim, forKey: "cornerRadius")
+                animationDuration = 0
+            }
+        }
+    }
+    
     func updateUI(withImageUpdate:Bool) {
         
         if shortNameLabel == nil{
