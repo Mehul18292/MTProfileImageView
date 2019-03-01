@@ -97,7 +97,7 @@ public class MTProfileImageView: UIImageView {
                 anim.duration = animationDuration
                 self.layer.cornerRadius = radius
                 if shortNameLabel != nil{
-                    shortNameLabel?.center == self.center;
+                    shortNameLabel?.center = self.center;
                 }
                 self.layer.add(anim, forKey: "cornerRadius")
                 animationDuration = 0
