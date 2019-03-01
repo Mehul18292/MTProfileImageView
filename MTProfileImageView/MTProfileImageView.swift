@@ -121,6 +121,15 @@ public class MTProfileImageView: UIImageView {
         
         if !self.subviews.contains(shortNameLabel!){
             self.addSubview(shortNameLabel!);
+            shortNameLabel?.translatesAutoresizingMaskIntoConstraints = false;
+            if #available(iOS 9.0, *) {
+                shortNameLabel!.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+                shortNameLabel!.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true;
+                shortNameLabel!.topAnchor.constraint(equalTo: self.topAnchor).isActive = true;
+                shortNameLabel!.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true;
+            } else {
+                // Fallback on earlier versions
+            };
         }
         
         colorGenerator.keepSameColorAlwaysForSameName = self.keepSameColorAlwaysForSameName;
