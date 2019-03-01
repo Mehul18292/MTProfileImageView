@@ -126,10 +126,8 @@ public class MTProfileImageView: UIImageView {
             self.addSubview(shortNameLabel!);
             shortNameLabel?.translatesAutoresizingMaskIntoConstraints = false;
             if #available(iOS 9.0, *) {
-                shortNameLabel!.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-                shortNameLabel!.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true;
-                shortNameLabel!.topAnchor.constraint(equalTo: self.topAnchor).isActive = true;
-                shortNameLabel!.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true;
+                shortNameLabel!.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true;
+                shortNameLabel!.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true;
             } else {
                 // Fallback on earlier versions
             };
