@@ -175,7 +175,7 @@ public class MTProfileImageView: UIImageView {
         let query = fullNameStr.trim();
         
         if !query.isEmpty {
-            let separators = CharacterSet(charactersIn: "-_(.,[{:; ")
+            let separators = CharacterSet(charactersIn: "-_(.,[{:;@# ")
             
             var strComponents:Array = query.components(separatedBy: separators)
             
