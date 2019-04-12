@@ -31,7 +31,7 @@ TODO: UIImageView subclass which either shows image from imageURLm OR creates 2 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'MTProfileImageView/*'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   
   # s.resource_bundles = {
   #   'MTProfileImageView' => ['MTProfileImageView/Assets/*.png']
