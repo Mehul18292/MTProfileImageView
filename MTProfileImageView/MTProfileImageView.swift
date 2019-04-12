@@ -180,15 +180,15 @@ public class MTProfileImageView: UIImageView {
             var strComponents:Array = query.components(separatedBy: separators)
             
             if strComponents.contains("-") {
-                strComponents.remove(at: strComponents.index(of: "-")!)
+                strComponents.remove(at: strComponents.firstIndex(of: "-")!)
             }
             
             if strComponents.contains(" ") {
-                strComponents.remove(at: strComponents.index(of: " ")!)
+                strComponents.remove(at: strComponents.firstIndex(of: " ")!)
             }
             
             if strComponents.contains("") {
-                strComponents.remove(at: strComponents.index(of: "")!)
+                strComponents.remove(at: strComponents.firstIndex(of: "")!)
             }
             
             if strComponents.count > 2 {
